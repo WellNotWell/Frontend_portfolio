@@ -18,6 +18,9 @@
 body {
     background-color: var(--main-background-color);
     color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header {
@@ -40,6 +43,11 @@ body {
     font-weight: 600;
 }
 
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
 .navbar a {
     margin-left: 40px;
     font-size: 18px;
@@ -52,6 +60,20 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-white);
+}
+
+.navbar a.comic {
+    color: green;
+    font-weight: 700;
+    border: 2px solid green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar a.comic:hover {
+    background-color: green;
+    color: var(--main-background-color);
 }
 
 .home {
