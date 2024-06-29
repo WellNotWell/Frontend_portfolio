@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll('.navbar a');
+const navLinks: NodeListOf<HTMLAnchorElement> = document.querySelectorAll('.navbar a');
 
 navLinks.forEach(link => {
     link.addEventListener('click', function(event) {
@@ -6,7 +6,6 @@ navLinks.forEach(link => {
         this.classList.add('active');
     });
 });
-
 
 function highlightNavLink() {
     const scrollPosition = window.scrollY;
@@ -26,7 +25,6 @@ function highlightNavLink() {
                 }
             });
         }
-
     });
 
     if (scrollPosition + windowHeight >= documentHeight) {
@@ -35,7 +33,5 @@ function highlightNavLink() {
     }
 }
 
-
 highlightNavLink();
-
 window.addEventListener('scroll', highlightNavLink);
