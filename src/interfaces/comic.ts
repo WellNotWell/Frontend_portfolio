@@ -1,4 +1,3 @@
-
 export interface Comic {
     safe_title: string;
     img: string;

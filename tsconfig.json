@@ -1,13 +1,21 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
       "target": "es5",
       "module": "commonjs",
+      "jsx": "react",
+      "declaration": false,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "removeComments": true,
       "strict": true,
+      "noImplicitAny": true,
       "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "outDir": "./dist"
-    },
-    "include": ["src/**/*.ts"],
-    "exclude": ["node_modules"]
-  }
-  
+      "experimentalDecorators": true
+  },
+  "include": [
+      "./src/**/*"
+  ],
+  "exclude": [
+      "node_modules"
+  ]
+}
