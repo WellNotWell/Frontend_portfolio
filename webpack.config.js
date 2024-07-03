@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'production',
@@ -7,6 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/Portfolio_frontend/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -20,7 +22,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -30,6 +32,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'img/',
+              publicPath: '/Portfolio_frontend/img/'
             },
           },
         ],
@@ -39,14 +42,16 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      inject: 'body',
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
     }),
   ],
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
     compress: true,
-    port: 9000,
+    contentBase: './dist',
     historyApiFallback: true,
   },
 };

@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "WellNotWell",
-  "homepage": "https://wellnotwell.github.io/Portfolio_frontend/",
+  "homepage": "https://wellnotwell.github.io/Portfolio_frontend/#",
   "license": "ISC",
   "description": "My personal portfolio",
   "dependencies": {
@@ -29,7 +29,9 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "file-loader": "^6.2.0",
+    "globals": "^15.8.0",
     "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.2",
