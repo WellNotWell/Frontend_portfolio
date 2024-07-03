@@ -4,7 +4,8 @@ import About from '../components/about';
 import Education from '../components/education';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
-import '../css/style.css';
+import '../css/header_style.css';
+import '../css/main_style.css';
 
 const Main: React.FC = () => (
   <div>

@@ -6,7 +6,7 @@ const Education: React.FC = () => (
     <div className="education-column">
       <h3>Innopolis University</h3>
       <p>Informatics and Computer Science</p>
-      <p className="year">2022-2024 (2nd Bachelor's course)</p>
+      <p className="year">2022-2024 (2nd Bachelor&#39;s course)</p>
     </div>
     <div className="education-column">
       <h3>University of Talents</h3>

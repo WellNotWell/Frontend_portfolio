@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10%;
+    background-color: var(--main-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.name {
+    font-size: 30px;
+    color: var(--main-white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.navbar a {
+    margin-left: 40px;
+    font-size: 18px;
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-white);
+}

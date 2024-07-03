@@ -1,4 +1,24 @@
+:root {
+    --main-white: #ededed;
+    --main-background-color: #181818;
+    --description-light-grey: #999;
+}
 
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 .comic-container {
     padding-top: 60px;

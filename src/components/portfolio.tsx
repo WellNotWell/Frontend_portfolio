@@ -15,7 +15,7 @@ const Portfolio: React.FC = () => (
         <time>2023</time>
         <a href="https://github.com/Angelika2707/Mafia-Bot">Mafia-bot</a>
         <p>Stack: Python, aiogram v2</p>
-        <p className="description">Telegram bot for group chats that plays the role of a host in the popular game "Mafia".</p>
+        <p className="description">Telegram bot for group chats that plays the role of a host in the popular game &quot;Mafia&quot;.</p>
       </li>
     </ul>
   </section>

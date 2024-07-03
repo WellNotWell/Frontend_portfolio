@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { formatDistanceToNowStrict } from 'date-fns';
-import { Comic } from '../interfaces/comic';
+import { Comic } from '../types/comic';
 
-const ComicComponent: React.FC = () => {
+interface ComicComponentProps {
+  email: string;
+}
+
+const ComicComponent: React.FC<ComicComponentProps> = ({ email }) => {
   const [comic, setComic] = useState<Comic | null>(null);
 
   useEffect(() => {
-    const email = "o.grediushko@innopolis.university";
     const apiUrl = `https://fwd.innopolis.university/api/hw2?email=${email}`;
 
     fetch(apiUrl)
