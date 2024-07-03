@@ -2,12 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -43,7 +42,11 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: './dist', // Корневая папка для dev-сервера
-    historyApiFallback: true, // Для поддержки react-router
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 9000,
+    historyApiFallback: true,
   },
 };
