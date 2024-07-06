@@ -11,7 +11,11 @@ module.exports = {
     publicPath: "/Portfolio_frontend/",
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js"],
+    extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components/'),
+      '@routes': path.resolve(__dirname, 'src/routes/'),
+    },
   },
   module: {
     rules: [
