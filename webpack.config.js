@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -32,7 +32,7 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "img/",
-              publicPath: "Frontend_portfolio/img/",
+              publicPath: "/Frontend_portfolio/img/",
             },
           },
         ],
