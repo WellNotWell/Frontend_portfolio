@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Education: React.FC = () => (
   <section id="education" className="education">
@@ -10,7 +10,10 @@ const Education: React.FC = () => (
     </div>
     <div className="education-column">
       <h3>University of Talents</h3>
-      <p>November 2021 specialized program in computer science “Laboratory of VR/AR/MR (Virtual, Augmented and Mixed Reality)”</p>
+      <p>
+        November 2021 specialized program in computer science “Laboratory of
+        VR/AR/MR (Virtual, Augmented and Mixed Reality)”
+      </p>
       <p>(certificate with honors received: 92/100 points)</p>
       <p className="year">2021</p>
     </div>

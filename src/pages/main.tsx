@@ -1,22 +1,15 @@
-import React from 'react';
-import HeaderIndex from '../components/index_header';
-import About from '../components/about';
-import Education from '../components/education';
-import Portfolio from '../components/portfolio';
-import Contact from '../components/contact';
-import '../css/header_style.css';
-import '../css/main_style.css';
+import React from "react";
+import About from "../components/About";
+import Education from "../components/Education";
+import Portfolio from "../components/Portfolio";
+import Layout from "../components/Layout";
 
 const Main: React.FC = () => (
-  <div>
-    <HeaderIndex />
-    <main>
-      <About />
-      <Education />
-      <Portfolio />
-      <Contact />
-    </main>
-  </div>
+  <Layout>
+    <About />
+    <Education />
+    <Portfolio />
+  </Layout>
 );
 
 export default Main;

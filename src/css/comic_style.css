@@ -1,53 +1,53 @@
 :root {
-    --main-white: #ededed;
-    --main-background-color: #181818;
-    --description-light-grey: #999;
+  --main-white: #ededed;
+  --main-background-color: #181818;
+  --description-light-grey: #999;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 body {
-    background-color: var(--main-background-color);
-    color: var(--main-white);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background-color: var(--main-background-color);
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .comic-container {
-    padding-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .comic {
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
 }
 
 .comic h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .comic img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .comic p {
-    font-size: 20px;
-    color: var(--description-light-grey);
+  font-size: 20px;
+  color: var(--description-light-grey);
 }

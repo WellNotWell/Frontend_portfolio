@@ -1,20 +1,15 @@
 {
   "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "jsx": "react",
-      "declaration": false,
-      "sourceMap": true,
-      "outDir": "./dist",
-      "removeComments": true,
-      "strict": true,
-      "noImplicitAny": true,
-      "esModuleInterop": true,
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": false,
+    "outDir": "./dist",
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
   },
-  "include": [
-      "./src/**/*"
-  ],
-  "exclude": [
-      "node_modules"
-  ]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
 }

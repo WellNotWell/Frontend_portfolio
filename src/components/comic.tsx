@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { formatDistanceToNowStrict } from 'date-fns';
-import { Comic } from '../types/comic';
+import React, { useEffect, useState } from "react";
+import { formatDistanceToNowStrict } from "date-fns";
+import { Comic } from "../types/comic";
 
 interface ComicComponentProps {
   email: string;
@@ -13,12 +13,14 @@ const ComicComponent: React.FC<ComicComponentProps> = ({ email }) => {
     const apiUrl = `https://fwd.innopolis.university/api/hw2?email=${email}`;
 
     fetch(apiUrl)
-      .then(response => response.json())
+      .then((response) => response.json())
       .then((data: number) => {
         const comicId = data;
-        return fetch(`https://fwd.innopolis.university/api/comic?id=${comicId}`);
+        return fetch(
+          `https://fwd.innopolis.university/api/comic?id=${comicId}`,
+        );
       })
-      .then(response => response.json())
+      .then((response) => response.json())
       .then((comic: Comic) => {
         setComic(comic);
       });
