@@ -23,7 +23,7 @@ jobs:
           node-version: "20.x"
       - name: Install Dependencies
         run: npm ci
-      - name: Lint Code
+      - name: Lint code
         run: npm run lint
       - name: Check formatting
         run: npm run check

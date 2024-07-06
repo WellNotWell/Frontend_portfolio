@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Main from "./pages/Main";
-import ComicPage from "./pages/ComicPage";
+import Main from "./routes/Main";
+import ComicPage from "./routes/ComicPage";
 
 const App: React.FC = () => (
   <Router>
